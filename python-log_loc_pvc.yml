@@ -1,0 +1,10 @@
+metadata:
+  name: log-locp6
+  labels:
+    name: log-locp6
+spec:
+  accessModes:
+   - ReadWriteOnce
+  resources:  
+    requests:
+      storage: 2Gi
