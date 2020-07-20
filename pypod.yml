@@ -1,21 +1,21 @@
 apiVersion: v1
 kind: Pod 
 metadata:
-  name: webpod-testp6
+  name: pythonpod-testdp6
   labels:
-    env: web-testing6     
+    env: python-testing6     
 spec:
   containers:
-    - name: webpod-test6
-      image: niraj1102/simplehtml:latest
+    - name: pythonpod-testp6
+      image: niraj1102/simplepython:latest
       imagePullPolicy: Always
       volumeMounts:
-        - name: log-loc6
-          mountPath: /ws/log-loc
+        - name: log-locp6
+          mountPath: /c/Users/Niraj/log-locp6
       ports:
         - containerPort: 80
-          name: webpod-test6
+          name: pythonpod-testp6
   volumes:
-    - name: log-loc6
+    - name: log-locp6
       persistentVolumeClaim:
-        claimName: log-loc6
+claimName: log-locp6
