@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webpod-test6
+  labels:
+    env: web-testing6
+spec:
+  selector:
+    env: web-testing6
+  type: NodePort
+  ports:
+    - nodePort: 31000
+      port: 80
+      targetPort: 80
